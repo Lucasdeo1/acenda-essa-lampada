@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acenda essa lampada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav >
+        <ul>
+            <li id="a" onmouseenter="enter(this)" onmouseout="out(this)" ><a href="">item 1</a></li>
+            <li onmouseenter="enter(this)" onmouseout="out(this)"><a href="">item 2</a></li>
+            <li  onmouseenter="enter(this)" onmouseout="out(this)"><a href="">item 3</a></li>
+        </ul>
+    </nav>
+    <header>Acenda essa lampada</header>
+    <div class="conteiner">
+        <h1>Acenda a lampada clicando nela e caso queira desliga-la clique novamente</h1>
+        
+        <div class="MID">
+            <img id="acender" src="./pic_bulboff.gif">
+        </div>
+        <div class="buttons">
+            <button onclick="document.getElementById('acender').src='./pic_bulboff.gif'">
+                apagar
+            </button>
+
+            <button onclick="document.getElementById('acender').src='./pic_bulbon.gif'">
+                acender
+            </button>
+        </div>
+    </div> 
+   <script src="app.js"></script>
+</body>
+</html>
